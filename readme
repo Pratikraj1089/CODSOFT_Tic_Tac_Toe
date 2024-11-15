@@ -1,1 +1,55 @@
-tic tac toe. i have made a simple tic tac toe game .in that user input the row and column to input their response to the box . it check for win and draw the match. in both cases after game play it ask for play again or end the game
+A simple text-based Tic-Tac-Toe game implemented in C++. The game allows two players to take turns playing as either 'X' or 'O' on a 3x3 grid. The game continues until one player wins, or the board is full and the game results in a draw. Players can choose to play again after a game ends.
+
+Features
+2-player turn-based gameplay.
+Board is displayed after every move.
+Automatically detects and announces the winner.
+If the game ends in a draw, it notifies the user.
+After each game, players can choose to play again or exit.
+
+
+Files
+TicTacToe.h: Header file containing the class definition and method declarations.
+TicTacToe.cpp: Implementation file where all the game logic is defined.
+main.cpp: Main program entry point. Starts the game and handles user input for replaying.
+
+
+Game Flow
+The game initializes with an empty 3x3 grid.
+Players take turns to make a move by entering a row and column (both between 0 and 2).
+    The board is displayed after each move.
+    The game checks for a winner after every move.
+If a player wins, the game announces the winner and ends.
+If the board is full and no player has won, the game ends in a draw.
+After the game ends, the player is asked if they would like to play again:
+Enter 'Y' to play again.
+Enter 'N' to exit the game.
+
+
+Welcome to Tic-Tac-Toe!
+-------------
+| . | . | . | 
+-------------
+| . | . | . | 
+-------------
+| . | . | . | 
+-------------
+Player X, enter row (0-2) and column (0-2): 1 1
+-------------
+| . | . | . | 
+-------------
+| . | X | . | 
+-------------
+| . | . | . | 
+-------------
+Player O, enter row (0-2) and column (0-2): 0 0
+-------------
+| O | . | . | 
+-------------
+| . | X | . | 
+-------------
+| . | . | . | 
+-------------
+... (game continues) ...
+Player X wins!
+Do you want to play again? (Y/N): Y
